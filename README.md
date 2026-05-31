@@ -26,18 +26,16 @@
 
 - [x] Commit-Reveal crypto core (SHA-256 + domain prefix + salt)
 - [x] AES-256-GCM encryption with random IV
-- [x] clearMasterKey() — key zeroed from memory on shutdown
 - [x] SQLite WAL database with cached prepared statements
-- [x] Reveal worker with isProcessing guard and forced-reveal
-- [x] Time-Jacking guard (process.hrtime.bigint monitoring)
-- [x] Telegram bot — primary + backup (RESERVE_BOT_TOKEN)
+- [x] Reveal worker with forced-reveal and deadline guard
+- [x] Telegram bot — primary + backup
 - [x] HTTP API: /health and /verify/:hash
 - [x] Public browser verifier (HTML/JS, no dependencies)
 - [x] CLI verifier (Node.js)
 - [x] Full test suite: 14/14 passing on Node.js 20 LTS
 - [x] GitHub Pages deployment
 - [x] Telegram channel: t.me/cryptaveritas
-- [x] Organization profile and roadmap (this repository)
+- [x] Organization profile and roadmap
 
 ### Security — 10 vulnerabilities closed
 
@@ -48,15 +46,9 @@
 - [x] Time-Jacking (NTP spoofing) — hrtime monitoring
 - [x] SQLITE_BUSY — busy_timeout 5000ms
 - [x] WAL data loss — wal_checkpoint(TRUNCATE) on graceful shutdown
-- [x] Key memory leak — clearMasterKey() Buffer.fill(0)
+- [x] Key memory leak — key zeroed from memory on shutdown
 - [x] Overlapping worker runs — isProcessing flag
 - [x] DoS via nesting — LIMIT 100 in getPendingCommits
-
-### Proof tests (staging)
-
-- [ ] Test 1: bot.stop() error does not block clearMasterKey() and dbService.close()
-- [ ] Test 2: Heap snapshot — AES key not found after clearMasterKey()
-- [ ] Test 3: Worker race condition — DB close during active write
 
 ---
 
@@ -81,30 +73,23 @@ No fiat, no KYC, no contracts for B2C and B2B tiers.
 - [x] Public verifier live
 - [x] Partner booklet published
 - [ ] Bot staging (48h stability test)
-- [ ] $CRYSIG token launch on Mainnet (after staging)
+- [ ] $CRYSIG token launch on Mainnet
 - [ ] OTC pre-launch sales via Squads v4 multisig
 - [ ] Token-gated access implementation (Helius RPC)
 - [ ] Drip Reveal (progressive signal disclosure)
 - [ ] Multi-oracle price validation (Birdeye + Pyth)
-- [ ] Reddit post in r/CryptoTechnology (waiting for karma 50+)
+- [ ] Reddit post in r/CryptoTechnology
 - [ ] Early access landing page
 
-### Legal triggers
+### Legal structure
 
-| Trigger | Condition | Action |
-|---------|-----------|--------|
-| 01 | First corporate client requesting official contract | Register legal entity (~200 EUR) |
-| 02 | First Enterprise payment | Treasury multisig (2/3) accepts $CRYSIG / USDC / USDT |
-| 03 | Revenue 5,000 EUR equivalent | Legal opinion on $CRYSIG (MiCA) |
+Legal entity registration triggered by first Enterprise client requesting an official contract.
+Enterprise clients may pay in $CRYSIG, USDC, USDT, or fiat via payment processor.
 
-### OTC mechanics (pre-launch, one-time)
+### OTC pre-launch mechanics (one-time)
 
-- Tool: Squads v4 multisig vault (500,000 CRYSIG reserved)
-- OTC price: $0.000008 per CRYSIG (20% discount from pool price)
-- Pool price: $0.00001 per CRYSIG
-- Client sends USDC → receives CRYSIG at fixed price
-- After OTC: client sees +25% vs pool price
-- Sniper protection: OTC completes before public pool creation
+- Tool: Squads v4 multisig vault
+- Fixed price for pilot clients before public pool creation
 - After pool launch: DEX only, market price
 
 ---
@@ -121,7 +106,7 @@ No fiat, no KYC, no contracts for B2C and B2B tiers.
 - [ ] Soulbound NFTs for hold tenure and activity
 - [ ] TradingView Pine Script indicator
 - [ ] KMS/HSM for key management
-- [ ] Cross-chain $CIPCRY integration (pending legal opinion)
+- [ ] Cross-chain $CIPCRY integration
 - [ ] Community audit of smart contracts
 - [ ] International trademark registration (Madrid system)
 - [ ] PostgreSQL migration for Enterprise tier
