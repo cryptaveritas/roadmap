@@ -60,10 +60,10 @@
 
 | Tier | Requirement | Notes |
 |------|-------------|-------|
-| B2C — Private signals | Hold 1,000 $CRYSIG | Offchain RPC check, hourly |
-| B2B Lite — Basic API | Hold 10,000 $CRYSIG | Offchain RPC check, hourly |
-| B2B Pro — Extended API | Hold 50,000 $CRYSIG | Offchain RPC check, hourly |
-| Enterprise — White label | Official contract | $CRYSIG / USDC / USDT / fiat |
+| B2C — Private signals | Hold 1,000 $VERAX | Offchain RPC check, hourly |
+| B2B Lite — Basic API | Hold 10,000 $VERAX | Offchain RPC check, hourly |
+| B2B Pro — Extended API | Hold 50,000 $VERAX | Offchain RPC check, hourly |
+| Enterprise — White label | Official contract | $VERAX / USDC / USDT / fiat |
 
 No fiat, no KYC, no contracts for B2C and B2B tiers.
 
@@ -73,7 +73,8 @@ No fiat, no KYC, no contracts for B2C and B2B tiers.
 - [x] Public verifier live
 - [x] Partner booklet published
 - [ ] Bot staging (48h stability test)
-- [ ] $CRYSIG token launch on Mainnet
+- [ ] $VERAX token launch on Mainnet (replaces $CRYSIG)
+- [ ] NexusVeritas API token-gated access (5,000+ VERAX)
 - [ ] OTC pre-launch sales via Squads v4 multisig
 - [ ] Token-gated access implementation (Helius RPC)
 - [ ] Drip Reveal (progressive signal disclosure)
@@ -84,7 +85,7 @@ No fiat, no KYC, no contracts for B2C and B2B tiers.
 ### Legal structure
 
 Legal entity registration triggered by first Enterprise client requesting an official contract.
-Enterprise clients may pay in $CRYSIG, USDC, USDT, or fiat via payment processor.
+Enterprise clients may pay in $VERAX, USDC, USDT, or fiat via payment processor.
 
 ### OTC pre-launch mechanics (one-time)
 
@@ -102,7 +103,7 @@ Enterprise clients may pay in $CRYSIG, USDC, USDT, or fiat via payment processor
 - [ ] Agent reputation registry (ERC-8004) → Base
 - [ ] Staking contract on Solana for B2B Lite
 - [ ] Verified signal source marketplace
-- [ ] Platform commission in $CRYSIG
+- [ ] Platform commission in $VERAX
 - [ ] Soulbound NFTs for hold tenure and activity
 - [ ] TradingView Pine Script indicator
 - [ ] KMS/HSM for key management
@@ -126,9 +127,9 @@ Enterprise clients may pay in $CRYSIG, USDC, USDT, or fiat via payment processor
 
 ---
 
-## $CRYSIG Tokenomics
+## $VERAX Tokenomics
 
-**Total supply:** 10,000,000 CRYSIG
+**Total supply:** 10,000,000 VERAX
 
 | Category | Share | Unlock |
 |----------|-------|--------|
@@ -138,7 +139,11 @@ Enterprise clients may pay in $CRYSIG, USDC, USDT, or fiat via payment processor
 | Marketing and partnerships | 10% | 25% immediately, 75% over 12 months |
 | Initial liquidity | 40% | LP burned (CyreneAI) |
 
-**Utility:** private signals (1,000+), B2B Lite (10,000+), B2B Pro (50,000+), buyback and burn from Enterprise revenue, governance (Phase 3+).
+**Utility:**
+- CryptaSignals: 1,000+ VERAX (signals), 10,000+ (B2B Lite), 50,000+ (B2B Pro)
+- NexusVeritas: 5,000+ VERAX (Basic), 25,000+ (Pro), 100,000+ (Enterprise)
+- Governance, staking discounts, buyback & burn from Enterprise revenue
+- Future ecosystem projects: automatic access for VERAX holders
 
 ---
 
