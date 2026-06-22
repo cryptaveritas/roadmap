@@ -60,10 +60,10 @@
 
 | Tier | Requirement | Notes |
 |------|-------------|-------|
-| B2C — Private signals | Hold 1,000 $VERAX | Offchain RPC check, hourly |
-| B2B Lite — Basic API | Hold 10,000 $VERAX | Offchain RPC check, hourly |
-| B2B Pro — Extended API | Hold 50,000 $VERAX | Offchain RPC check, hourly |
-| Enterprise — White label | Official contract | $VERAX / USDC / USDT / fiat |
+| B2C — Private signals | Approved access | Contact us |
+| B2B Lite — Basic API | API key | Contact us |
+| B2B Pro — Extended API | API key | Contact us |
+| Enterprise — White label | Official contract | USDC / USDT / fiat |
 
 No fiat, no KYC, no contracts for B2C and B2B tiers.
 
@@ -73,10 +73,6 @@ No fiat, no KYC, no contracts for B2C and B2B tiers.
 - [x] Public verifier live
 - [x] Partner booklet published
 - [ ] Bot staging (48h stability test)
-- [ ] $VERAX token launch on Mainnet (replaces $CRYSIG)
-- [ ] NexusVeritas API token-gated access (5,000+ VERAX)
-- [ ] OTC pre-launch sales via Squads v4 multisig
-- [ ] Token-gated access implementation (Helius RPC)
 - [ ] Drip Reveal (progressive signal disclosure)
 - [ ] Multi-oracle price validation (Birdeye + Pyth)
 - [ ] Reddit post in r/CryptoTechnology
@@ -85,7 +81,7 @@ No fiat, no KYC, no contracts for B2C and B2B tiers.
 ### Legal structure
 
 Legal entity registration triggered by first Enterprise client requesting an official contract.
-Enterprise clients may pay in $VERAX, USDC, USDT, or fiat via payment processor.
+Enterprise clients may pay in USDC, USDT, or fiat via payment processor.
 
 ### OTC pre-launch mechanics (one-time)
 
@@ -103,7 +99,6 @@ Enterprise clients may pay in $VERAX, USDC, USDT, or fiat via payment processor.
 - [ ] Agent reputation registry (ERC-8004) → Base
 - [ ] Staking contract on Solana for B2B Lite
 - [ ] Verified signal source marketplace
-- [ ] Platform commission in $VERAX
 - [ ] Soulbound NFTs for hold tenure and activity
 - [ ] TradingView Pine Script indicator
 - [ ] KMS/HSM for key management
@@ -124,26 +119,6 @@ Enterprise clients may pay in $VERAX, USDC, USDT, or fiat via payment processor.
 - [ ] DeFAI protocol partnerships
 - [ ] Three-level ZK audit (CI/CD + AI assistants + external)
 - [ ] Enterprise white-label ZK verification
-
----
-
-## $VERAX Tokenomics
-
-**Total supply:** 10,000,000 VERAX
-
-| Category | Share | Unlock |
-|----------|-------|--------|
-| Team | 15% | 6-month cliff, 24 months linear |
-| Treasury | 25% | Multisig 2 of 3 (Squads v4) |
-| Community and airdrops | 10% | 20% immediately, 80% over 12 months |
-| Marketing and partnerships | 10% | 25% immediately, 75% over 12 months |
-| Initial liquidity | 40% | LP burned (CyreneAI) |
-
-**Utility:**
-- CryptaSignals: 1,000+ VERAX (signals), 10,000+ (B2B Lite), 50,000+ (B2B Pro)
-- NexusVeritas: 5,000+ VERAX (Basic), 25,000+ (Pro), 100,000+ (Enterprise)
-- Governance, staking discounts, buyback & burn from Enterprise revenue
-- Future ecosystem projects: automatic access for VERAX holders
 
 ---
 
@@ -171,4 +146,4 @@ SHA-256( "cryptasignals:v1|signal|" + toStrictString(signal) + "|" + salt )
 
 ---
 
-*Last updated: May 2026*
+*Last updated: June 2026*
